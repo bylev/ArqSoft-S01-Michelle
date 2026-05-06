@@ -1,0 +1,43 @@
+﻿@model Catalogo.Models.Item
+
+<div class="detail-container">
+    <div class="detail-header">
+        <h1 class="detail-title">
+            <span class="emoji"></span> @Model.Nombre
+        </h1>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label">
+            <span class="emoji"></span> Artista
+        </div>
+        <div class="detail-value">@Model.Artista</div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label">
+            <span class="emoji"></span> Género
+        </div>
+        <div class="detail-value">@Model.Genero</div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label">
+            <span class="emoji"></span> Formato
+        </div>
+        <div class="detail-value">@Model.Formato</div>
+    </div>
+
+    <div class="detail-item">
+        <div class="detail-label">
+            <span class="emoji"></span> Año
+        </div>
+        <div class="detail-value">@Model.Ano</div>
+    </div>
+
+    <div class="detail-actions">
+        <a asp-action="Index" class="btn-back">
+            <span class="emoji"></span> Volver al Catálogo
+        </a>
+    </div>
+</div>

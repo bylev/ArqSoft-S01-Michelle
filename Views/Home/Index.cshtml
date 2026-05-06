@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="hero-section">
+    <h1 class="hero-title">
+        <span class="emoji"></span> Catálogo Musical
+    </h1>
+    <p class="hero-subtitle">Organiza y gestiona tu colección de música favorita</p>
+    <div class="hero-buttons">
+        <a asp-controller="Catalogo" asp-action="Index" class="btn-primary-custom">
+            <span class="emoji"></span> Explorar Catálogo
+        </a>
+        <a asp-controller="Catalogo" asp-action="Agregar" class="btn-add">
+            <span class="emoji"></span> Agregar Álbum
+        </a>
+    </div>
+</div>
