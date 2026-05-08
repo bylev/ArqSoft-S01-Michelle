@@ -1,16 +1,22 @@
+/* ============================================
+   COLOR PALETTE - TRULLY COLOR PALETTE
+   ============================================ */
 :root {
-  --pastel-green: #A8D5BA;
-  --pastel-yellow: #FFE5B4;
-  --pastel-pink: #FFB6D9;
-  --pastel-green-dark: #7FC99F;
-  --pastel-yellow-dark: #FFD699;
-  --pastel-pink-dark: #FF99C8;
+  --color-yellow: #FED172;
+  --color-orange: #F3742B;
+  --color-red: #B83A14;
+  --color-purple: #612E37;
+  --color-navy: #231650;
   --text-dark: #333333;
   --text-light: #666666;
   --white: #FFFFFF;
-  --shadow-light: 0 4px 15px rgba(168, 213, 186, 0.1);
-  --shadow-medium: 0 8px 25px rgba(168, 213, 186, 0.2);
+  --shadow-light: 0 4px 15px rgba(35, 22, 80, 0.1);
+  --shadow-medium: 0 8px 25px rgba(35, 22, 80, 0.2);
 }
+
+/* ============================================
+   GENERAL STYLES
+   ============================================ */
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -27,23 +33,25 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
-  background: linear-gradient(135deg, rgba(168, 213, 186, 0.08) 0%, rgba(255, 229, 180, 0.08) 50%, rgba(255, 182, 217, 0.08) 100%);
+  background: #f8f8f8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .elegant-bg {
-  background: linear-gradient(135deg, rgba(168, 213, 186, 0.1) 0%, rgba(255, 229, 180, 0.08) 50%, rgba(255, 182, 217, 0.1) 100%);
+  background: #f8f8f8;
   position: relative;
   overflow-x: hidden;
 }
 
+/* ============================================
+   NAVBAR STYLES
+   ============================================ */
 .navbar-custom {
-  background: linear-gradient(90deg, var(--pastel-green) 0%, var(--pastel-yellow) 50%, var(--pastel-pink) 100%);
+  background: var(--color-navy);
   box-shadow: var(--shadow-medium);
   padding: 1rem 0;
-  backdrop-filter: blur(10px);
   animation: slideDown 0.6s ease-out;
 }
 
@@ -61,7 +69,7 @@ body {
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-dark) !important;
+  color: var(--white) !important;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   display: flex;
@@ -71,7 +79,7 @@ body {
 
 .navbar-brand:hover {
   transform: scale(1.05);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand .emoji {
@@ -90,7 +98,7 @@ body {
 }
 
 .nav-custom {
-  color: var(--text-dark) !important;
+  color: var(--white) !important;
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
@@ -100,7 +108,7 @@ body {
 }
 
 .nav-custom:hover {
-  color: var(--text-dark) !important;
+  color: var(--color-yellow) !important;
   transform: translateY(-2px);
 }
 
@@ -111,7 +119,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--pastel-green-dark), var(--pastel-pink-dark));
+  background: var(--color-yellow);
   transition: width 0.3s ease;
 }
 
@@ -119,18 +127,24 @@ body {
   width: 100%;
 }
 
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
 .main-content {
   flex: 1;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
 .footer-custom {
-  background: linear-gradient(90deg, var(--pastel-pink) 0%, var(--pastel-yellow) 50%, var(--pastel-green) 100%);
-  color: var(--text-dark);
+  background: var(--color-navy);
+  color: var(--white);
   padding: 2rem 0;
   margin-top: auto;
-  box-shadow: 0 -4px 15px rgba(168, 213, 186, 0.1);
+  box-shadow: 0 -4px 15px rgba(35, 22, 80, 0.2);
   animation: slideUp 0.6s ease-out 0.3s both;
 }
 
@@ -148,10 +162,11 @@ body {
 .footer-text {
   margin: 0;
   font-weight: 500;
+  color: var(--white);
 }
 
 .footer-link {
-  color: var(--text-dark) !important;
+  color: var(--color-yellow) !important;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -165,7 +180,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--text-dark);
+  background: var(--color-yellow);
   transition: width 0.3s ease;
 }
 
@@ -173,7 +188,9 @@ body {
   width: 100%;
 }
 
-
+/* ============================================
+   HEADINGS & TEXT
+   ============================================ */
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
   font-weight: 700;
@@ -194,10 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, var(--pastel-green-dark) 0%, var(--pastel-pink-dark) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-navy);
 }
 
 p {
@@ -205,6 +219,9 @@ p {
   line-height: 1.6;
 }
 
+/* ============================================
+   ALBUM GRID / CARD STYLES
+   ============================================ */
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -259,17 +276,11 @@ p {
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(90deg, var(--pastel-green), var(--pastel-yellow), var(--pastel-pink));
-  animation: gradientShift 3s ease infinite;
-}
-
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% center; }
-  50% { background-position: 100% center; }
+  background: var(--color-orange);
 }
 
 .album-header {
-  background: linear-gradient(135deg, var(--pastel-green) 0%, var(--pastel-yellow) 100%);
+  background: var(--color-yellow);
   padding: 2rem 1.5rem;
   min-height: 120px;
   display: flex;
@@ -331,7 +342,7 @@ p {
 
 .album-info-item .emoji {
   font-size: 1.2rem;
-  color: var(--pastel-green-dark);
+  color: var(--color-orange);
   width: 20px;
   text-align: center;
 }
@@ -366,19 +377,19 @@ p {
 }
 
 .btn-view {
-  background: linear-gradient(135deg, var(--pastel-green), var(--pastel-green-dark));
+  background: var(--color-orange);
   color: var(--white);
 }
 
 .btn-view:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(168, 213, 186, 0.4);
+  box-shadow: 0 4px 12px rgba(243, 116, 43, 0.4);
   color: var(--white);
   text-decoration: none;
 }
 
 .btn-delete {
-  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-pink-dark));
+  background: var(--color-red);
   color: var(--white);
   font-size: 0.85rem;
   padding: 0.6rem 0.8rem;
@@ -386,7 +397,7 @@ p {
 
 .btn-delete:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 182, 217, 0.4);
+  box-shadow: 0 4px 12px rgba(184, 58, 20, 0.4);
   color: var(--white);
   text-decoration: none;
 }
@@ -412,7 +423,7 @@ p {
 
 .btn-filter {
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--pastel-green);
+  border: 2px solid var(--color-orange);
   background: transparent;
   color: var(--text-dark);
   border-radius: 25px;
@@ -424,14 +435,14 @@ p {
 
 .btn-filter:hover,
 .btn-filter.active {
-  background: linear-gradient(135deg, var(--pastel-green), var(--pastel-yellow));
-  border-color: var(--pastel-green-dark);
+  background: var(--color-orange);
+  color: var(--white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-light);
 }
 
 .btn-add {
-  background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-pink-dark));
+  background: var(--color-navy);
   color: var(--white);
   padding: 0.85rem 2rem;
   border: none;
@@ -451,12 +462,16 @@ p {
   box-shadow: var(--shadow-medium);
   color: var(--white);
   text-decoration: none;
+  background: var(--color-purple);
 }
 
 .btn-add .emoji {
   font-size: 1.2rem;
 }
 
+/* ============================================
+   FORM STYLES
+   ============================================ */
 .form-container {
   background: var(--white);
   padding: 2.5rem;
@@ -509,12 +524,12 @@ select,
 textarea {
   width: 100%;
   padding: 0.85rem 1.2rem;
-  border: 2px solid var(--pastel-green);
+  border: 2px solid var(--color-orange);
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-  background: rgba(168, 213, 186, 0.05);
+  background: rgba(243, 116, 43, 0.05);
   box-sizing: border-box;
 }
 
@@ -525,9 +540,9 @@ input[type="date"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--pastel-pink);
-  box-shadow: 0 0 0 3px rgba(255, 182, 217, 0.2);
-  background: rgba(168, 213, 186, 0.08);
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 3px rgba(184, 58, 20, 0.2);
+  background: rgba(243, 116, 43, 0.08);
   transform: scale(1.02);
 }
 
@@ -536,8 +551,11 @@ textarea {
   min-height: 120px;
 }
 
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
 .btn-primary-custom {
-  background: linear-gradient(135deg, var(--pastel-green), var(--pastel-green-dark));
+  background: var(--color-orange);
   color: var(--white);
   padding: 0.85rem 2.5rem;
   border: none;
@@ -559,6 +577,7 @@ textarea {
   box-shadow: var(--shadow-medium);
   color: var(--white);
   text-decoration: none;
+  background: var(--color-red);
 }
 
 .btn-primary-custom .emoji {
@@ -566,7 +585,7 @@ textarea {
 }
 
 .btn-secondary-custom {
-  background: linear-gradient(135deg, var(--pastel-yellow), var(--pastel-yellow-dark));
+  background: var(--color-yellow);
   color: var(--text-dark);
   padding: 0.85rem 2.5rem;
   border: none;
@@ -586,6 +605,8 @@ textarea {
   box-shadow: var(--shadow-medium);
   color: var(--text-dark);
   text-decoration: none;
+  background: var(--color-orange);
+  color: var(--white);
 }
 
 .btn-secondary-custom .emoji {
@@ -594,8 +615,8 @@ textarea {
 
 .btn-back {
   background: transparent;
-  color: var(--pastel-green-dark);
-  border: 2px solid var(--pastel-green);
+  color: var(--color-orange);
+  border: 2px solid var(--color-orange);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-weight: 600;
@@ -607,7 +628,7 @@ textarea {
 }
 
 .btn-back:hover {
-  background: var(--pastel-green);
+  background: var(--color-orange);
   transform: translateX(-5px);
   color: var(--white);
   text-decoration: none;
@@ -617,6 +638,9 @@ textarea {
   font-size: 1.2rem;
 }
 
+/* ============================================
+   DETAIL PAGE STYLES
+   ============================================ */
 .detail-container {
   background: var(--white);
   padding: 2.5rem;
@@ -628,13 +652,15 @@ textarea {
 }
 
 .detail-header {
-  background: linear-gradient(135deg, var(--pastel-green) 0%, var(--pastel-yellow) 50%, var(--pastel-pink) 100%);
+  background: var(--color-yellow);
   padding: 2rem;
   border-radius: 15px;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-left: 5px solid var(--color-orange);
+  border-right: 5px solid var(--color-red);
 }
 
 .detail-header::before {
@@ -671,7 +697,7 @@ textarea {
 .detail-item {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid var(--pastel-green);
+  border-bottom: 2px solid var(--color-orange);
   animation: fadeInUp 0.6s ease-out;
 }
 
@@ -683,7 +709,7 @@ textarea {
 
 .detail-label {
   font-weight: 700;
-  color: var(--pastel-green-dark);
+  color: var(--color-navy);
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   display: flex;
@@ -705,15 +731,18 @@ textarea {
 .detail-actions {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 2px solid var(--pastel-green);
+  border-top: 2px solid var(--color-orange);
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* ============================================
+   HOME PAGE STYLES
+   ============================================ */
 .hero-section {
-  background: linear-gradient(135deg, var(--pastel-green) 0%, var(--pastel-yellow) 50%, var(--pastel-pink) 100%);
+  background: var(--color-navy);
   padding: 4rem 2rem;
   border-radius: 20px;
   text-align: center;
@@ -730,7 +759,7 @@ textarea {
   right: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   animation: shine 3s ease-in-out infinite;
 }
 
@@ -743,7 +772,7 @@ textarea {
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--color-yellow);
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -759,7 +788,7 @@ textarea {
 
 .hero-subtitle {
   font-size: 1.3rem;
-  color: var(--text-dark);
+  color: var(--white);
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
@@ -821,15 +850,20 @@ textarea {
   line-height: 1.6;
 }
 
-
+/* ============================================
+   HORIZONTAL RULE
+   ============================================ */
 hr {
   border: none;
   height: 3px;
-  background: linear-gradient(90deg, var(--pastel-green), var(--pastel-yellow), var(--pastel-pink), var(--pastel-yellow), var(--pastel-green));
+  background: var(--color-orange);
   border-radius: 2px;
   margin: 2rem 0;
 }
 
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 @media (max-width: 768px) {
   .album-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -892,34 +926,42 @@ hr {
   }
 }
 
-
+/* ============================================
+   FOCUS & ACCESSIBILITY
+   ============================================ */
 .btn:focus, 
 .btn:active:focus, 
 .btn-link.nav-link:focus, 
 .form-control:focus, 
 .form-check-input:focus,
 a:focus {
-  outline: 2px solid var(--pastel-green-dark);
+  outline: 2px solid var(--color-orange);
   outline-offset: 2px;
 }
 
+/* ============================================
+   TRANSITIONS & ANIMATIONS
+   ============================================ */
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(168, 213, 186, 0.1);
+  background: rgba(243, 116, 43, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--pastel-green), var(--pastel-pink));
+  background: var(--color-orange);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, var(--pastel-green-dark), var(--pastel-pink-dark));
+  background: var(--color-red);
 }
