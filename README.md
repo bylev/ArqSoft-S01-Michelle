@@ -39,4 +39,4 @@ En conclusión, esta actividad me ayudó a comprender un poco mejor la arquitect
 
 # Claúsula de IA
 
-En esta actividad, se utilizó IA para algunos estilos de la interfaz, como ideas de estilo. Aún así, el proyecto fue desarrollado con las presentaciones del profesor.
+En esta actividad, se utilizó IA para algunos estilos de la interfaz, como ideas de estilo, agregar efectos. Aún así, la actividad fue creada y desarrollada con los pasos de la presentación del profesor. 
