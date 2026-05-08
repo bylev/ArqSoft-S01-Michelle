@@ -43,10 +43,10 @@ En esta actividad, se utilizó IA para algunos estilos de la interfaz, como idea
 
 ---
 
-#Badges
+# Tecnologías utilizadas
 
 
-|               |               |
+
 | ------------- | ------------- |
 | .NET          | ![.NET](https://img.shields.io/badge/.NET-512BD4.svg?style=for-the-badge&logo=dotnet&logoColor=white) |
 | C#            | ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) |
