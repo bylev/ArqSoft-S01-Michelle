@@ -1,6 +1,4 @@
-/* ============================================
-   COLOR PALETTE - TRULLY COLOR PALETTE
-   ============================================ */
+
 :root {
   --color-yellow: #FED172;
   --color-orange: #F3742B;
@@ -14,9 +12,6 @@
   --shadow-medium: 0 8px 25px rgba(35, 22, 80, 0.2);
 }
 
-/* ============================================
-   GENERAL STYLES
-   ============================================ */
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -45,9 +40,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================================
-   NAVBAR STYLES
-   ============================================ */
+
 .navbar-custom {
   background: var(--color-navy);
   box-shadow: var(--shadow-medium);
@@ -127,18 +120,13 @@ body {
   width: 100%;
 }
 
-/* ============================================
-   MAIN CONTENT AREA
-   ============================================ */
 .main-content {
   flex: 1;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* ============================================
-   FOOTER STYLES
-   ============================================ */
+
 .footer-custom {
   background: var(--color-navy);
   color: var(--white);
@@ -188,9 +176,7 @@ body {
   width: 100%;
 }
 
-/* ============================================
-   HEADINGS & TEXT
-   ============================================ */
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
   font-weight: 700;
@@ -219,9 +205,7 @@ p {
   line-height: 1.6;
 }
 
-/* ============================================
-   ALBUM GRID / CARD STYLES
-   ============================================ */
+
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -402,9 +386,7 @@ p {
   text-decoration: none;
 }
 
-/* ============================================
-   FILTER & ACTION BUTTONS
-   ============================================ */
+
 .filter-section {
   background: var(--white);
   padding: 2rem;
@@ -469,9 +451,7 @@ p {
   font-size: 1.2rem;
 }
 
-/* ============================================
-   FORM STYLES
-   ============================================ */
+
 .form-container {
   background: var(--white);
   padding: 2.5rem;
@@ -551,9 +531,6 @@ textarea {
   min-height: 120px;
 }
 
-/* ============================================
-   BUTTON STYLES
-   ============================================ */
 .btn-primary-custom {
   background: var(--color-orange);
   color: var(--white);
@@ -638,9 +615,7 @@ textarea {
   font-size: 1.2rem;
 }
 
-/* ============================================
-   DETAIL PAGE STYLES
-   ============================================ */
+
 .detail-container {
   background: var(--white);
   padding: 2.5rem;
@@ -738,9 +713,6 @@ textarea {
   justify-content: center;
 }
 
-/* ============================================
-   HOME PAGE STYLES
-   ============================================ */
 .hero-section {
   background: var(--color-navy);
   padding: 4rem 2rem;
@@ -850,9 +822,7 @@ textarea {
   line-height: 1.6;
 }
 
-/* ============================================
-   HORIZONTAL RULE
-   ============================================ */
+
 hr {
   border: none;
   height: 3px;
@@ -861,9 +831,6 @@ hr {
   margin: 2rem 0;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
 @media (max-width: 768px) {
   .album-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -926,9 +893,7 @@ hr {
   }
 }
 
-/* ============================================
-   FOCUS & ACCESSIBILITY
-   ============================================ */
+
 .btn:focus, 
 .btn:active:focus, 
 .btn-link.nav-link:focus, 
@@ -939,16 +904,11 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* ============================================
-   TRANSITIONS & ANIMATIONS
-   ============================================ */
 * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ============================================
-   SCROLLBAR STYLING
-   ============================================ */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
